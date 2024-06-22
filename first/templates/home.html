@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}MAbreu Home{% endblock %}
+{% block content %}
+<br/>
+<br/>
+<div class="card" style="width: 14rem;">
+  <img src="{% static 'images/us.png' %}" class="image" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">His Nibs</h5>
+    <p class="card-text">A very-important person.</p>
+  </div>
+  <div class="card-body">
+    <a href="{% url 'about' %}" class="card-link">About Me</a>
+    <a href="{% url 'contact' %}" class="card-link">Contact Me</a>
+  </div>
+</div>
+<br/>
+<br/>
+{{bob}}
+{% endblock %}
